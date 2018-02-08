@@ -15,6 +15,8 @@
 		04D89CFE202B057A00126467 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D89CFD202B057A00126467 /* UserViewController.swift */; };
 		04D89D00202B058E00126467 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D89CFF202B058E00126467 /* CategoryViewController.swift */; };
 		04D89D03202B095800126467 /* CategoryTableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D89D02202B095800126467 /* CategoryTableVIew.swift */; };
+		04D89D08202C2B5400126467 /* BaseTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D89D07202C2B5400126467 /* BaseTask.swift */; };
+		04D89D0A202C44C600126467 /* BaseSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D89D09202C44C600126467 /* BaseSessionManager.swift */; };
 		46F414DFB2D1A07A9E45E501 /* Pods_CodeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84074178FE9FA8BEA54DF1EF /* Pods_CodeProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		04D89CFD202B057A00126467 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		04D89CFF202B058E00126467 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		04D89D02202B095800126467 /* CategoryTableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableVIew.swift; sourceTree = "<group>"; };
+		04D89D07202C2B5400126467 /* BaseTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTask.swift; sourceTree = "<group>"; };
+		04D89D09202C44C600126467 /* BaseSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSessionManager.swift; sourceTree = "<group>"; };
 		1666F3C9A623C33D70F59318 /* Pods-CodeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeProject/Pods-CodeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		84074178FE9FA8BEA54DF1EF /* Pods_CodeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BC085C116AC91C9D73E63C /* Pods-CodeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeProject/Pods-CodeProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		04D89D04202C264900126467 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				04D89D07202C2B5400126467 /* BaseTask.swift */,
+				04D89D09202C44C600126467 /* BaseSessionManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -267,8 +273,10 @@
 				04D89D00202B058E00126467 /* CategoryViewController.swift in Sources */,
 				04D89CEE202AFE9000126467 /* ViewController.swift in Sources */,
 				04D89CFE202B057A00126467 /* UserViewController.swift in Sources */,
+				04D89D08202C2B5400126467 /* BaseTask.swift in Sources */,
 				04D89D03202B095800126467 /* CategoryTableVIew.swift in Sources */,
 				04D89CEC202AFE9000126467 /* AppDelegate.swift in Sources */,
+				04D89D0A202C44C600126467 /* BaseSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6UU243CA64;
 				INFOPLIST_FILE = CodeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longyuan.code;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +437,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6UU243CA64;
 				INFOPLIST_FILE = CodeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longyuan.code;
 				PRODUCT_NAME = "$(TARGET_NAME)";
