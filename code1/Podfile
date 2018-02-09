@@ -2,8 +2,12 @@ platform :ios, '8.0'
 inhibit_all_warnings!
 use_frameworks!   
 
-target 'code1' do
+abstract_target 'code1-branches' do
+    pod 'SnapKit', '~> 4.0.0'
 
-   pod 'SnapKit', '~> 4.0.0'
+  target 'code1' do
+    end
 
+  target 'code2' do
+    end
 end
